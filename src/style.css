@@ -1,0 +1,41 @@
+body {
+	font-family: "Arial", sans-serif;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+
+	background: linear-gradient(to right, #74ebd5, #acb6e5);
+	color: #333;
+	font-size: 52px;
+}
+
+.cell {
+	border: #333 1px solid;
+	width: 90px;
+	height: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.row {
+	display: flex;
+}
+
+#game-board {
+	grid-template-columns: repeat(3, 60px);
+	grid-template-rows: repeat(3, 60px);
+	margin-bottom: 1em;
+}
+
+.restart-btn {
+	font-size: 18px;
+	background-color: #333;
+	color: white;
+	padding: 15px 20px;
+	border-radius: 1.2em;
+}
